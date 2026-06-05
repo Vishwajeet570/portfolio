@@ -21,7 +21,7 @@ const achievements = [
     icon: "⚙️",
   },
   {
-    value: 200,
+    value: 600,
     suffix: "+",
     label: "DSA Problems Solved",
     desc: "LeetCode & competitive programming",
@@ -29,10 +29,10 @@ const achievements = [
     icon: "🧠",
   },
   {
-    value: 3,
+    value: 2,
     suffix: "+",
     label: "Years of Journey",
-    desc: "From QA to Backend Engineering",
+    desc: "From Frontend to Backend Engineering",
     color: "#00d4ff",
     icon: "📈",
   },

@@ -122,7 +122,7 @@ export default function Navbar() {
               </motion.button>
             ))}
             <motion.a
-              href="/resume.pdf"
+              href="/backend_resume_pro_2.pdf"
               download
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

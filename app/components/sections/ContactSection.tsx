@@ -2,12 +2,13 @@
 import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import emailjs from "@emailjs/browser";
 
 const socials = [
   {
     name: "LinkedIn",
     handle: "vishwajeet-singh-rathore",
-    href: "https://linkedin.com/in/vishwajeet-singh-rathore",
+    href: "https://linkedin.com/in/vishwajeet-tech",
     color: "#0a66c2",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -17,8 +18,8 @@ const socials = [
   },
   {
     name: "GitHub",
-    handle: "vishwajeet-rathore",
-    href: "https://github.com",
+    handle: "vishwajeet-tech",
+    href: "https://github.com/Vishwajeet570",
     color: "#eef2ff",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -28,8 +29,8 @@ const socials = [
   },
   {
     name: "Email",
-    handle: "vishwajeet@example.com",
-    href: "mailto:vishwajeet@example.com",
+    handle: "singhrathorev21@gmail.com",
+    href: "mailto:singhrathorev21@gmail.com",
     color: "#ff6b35",
     icon: (
       <svg
@@ -58,14 +59,58 @@ export default function ContactSection() {
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
 
+  // const handleSubmit = async (e: FormEvent) => {
+  //   e.preventDefault();
+  //   setSending(true);
+  //   await new Promise((r) => setTimeout(r, 1500));
+  //   setSending(false);
+  //   setSent(true);
+  //   setTimeout(() => setSent(false), 4000);
+  //   setForm({ name: "", email: "", subject: "", message: "" });
+  // };
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    setSending(true);
-    await new Promise((r) => setTimeout(r, 1500));
-    setSending(false);
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
-    setForm({ name: "", email: "", subject: "", message: "" });
+
+    try {
+      setSending(true);
+
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!, // Your Service ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Your Template ID
+        {
+          from_name: form.name,
+          from_email: form.email,
+          subject: form.subject,
+          message: form.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
+
+      setSent(true);
+
+      setForm({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      setTimeout(() => setSent(false), 4000);
+    } catch (error: any) {
+      console.error("EmailJS Error:", error);
+
+      if (error?.text) {
+        console.error("Error Text:", error.text);
+      }
+
+      if (error?.status) {
+        console.error("Status:", error.status);
+      }
+
+      alert(JSON.stringify(error));
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -457,7 +502,7 @@ export default function ContactSection() {
 
             {/* Resume download */}
             <a
-              href="/resume.pdf"
+              href="/backend_resume_pro_2.pdf"
               download
               style={{
                 display: "flex",

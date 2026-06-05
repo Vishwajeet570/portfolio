@@ -4,31 +4,38 @@ import { useInView } from "react-intersection-observer";
 
 const timeline = [
   {
-    year: "2024 – Present",
-    role: "Java Backend Developer",
-    company: "Building Production Systems",
-    desc: "Developing scalable microservices with Spring Boot, Docker, and Kubernetes. Working on REST APIs, RBAC systems, and cloud deployments.",
+    year: "2025 – Present",
+    role: "Software Developer L1",
+    company: "Tudip Technologies",
+    desc: "Developing enterprise-grade backend systems using Java, Spring Boot, Microservices, Redis, Docker, and Kubernetes. Designing secure REST APIs, implementing JWT authentication, optimizing database performance, and building scalable distributed applications.",
     color: "#00d4ff",
   },
   {
-    year: "2023",
-    role: "Developer at Databricks Lab",
-    company: "Databricks Lab",
-    desc: "Worked as a developer contributing to data engineering solutions, gaining hands-on experience with modern data infrastructure.",
+    year: "2024",
+    role: "Associate Software Developer",
+    company: "Tudip Technologies",
+    desc: "Started professional backend development journey by building Spring Boot applications, REST APIs, database integrations, Redis caching solutions, and contributing to production deployments and CI/CD workflows.",
     color: "#7b2fff",
   },
   {
-    year: "2022 – 2023",
-    role: "Manual Testing Engineer",
-    company: "QA & Testing",
-    desc: "Conducted comprehensive manual testing, wrote test cases, and ensured software quality through systematic testing methodologies.",
+    year: "2024 – 2025",
+    role: "Client Engagement – Databricks",
+    company: "Databricks Project",
+    desc: "Worked on enterprise client initiatives involving backend systems, distributed architectures, data engineering concepts, scalable processing workflows, and large-scale application support.",
     color: "#ff6b35",
   },
   {
-    year: "2021",
-    role: "Computer Science Graduate",
-    company: "Academic Foundation",
-    desc: "Built strong foundations in algorithms, data structures, OOP principles, and software engineering concepts.",
+    year: "2023 – 2024",
+    role: "Java Backend Engineering",
+    company: "Professional Skill Development",
+    desc: "Mastered Core Java, OOP, Collections Framework, Multithreading, JVM Internals, Spring Boot, Database Optimization, REST API Design, Microservices Architecture, and Backend System Design.",
+    color: "#00d4ff",
+  },
+  {
+    year: "2019 – 2023",
+    role: "Bachelor of Technology (CSE)",
+    company: "Mahakal Institute of Technology",
+    desc: "Built strong foundations in Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks, Object-Oriented Programming, and Software Engineering principles.",
     color: "#00d4ff",
   },
 ];
@@ -36,8 +43,8 @@ const timeline = [
 const stats = [
   { label: "Projects Built", value: "10+" },
   { label: "Technologies", value: "15+" },
-  { label: "DSA Problems", value: "200+" },
-  { label: "Years Journey", value: "3+" },
+  { label: "DSA Problems", value: "600+" },
+  { label: "Years Journey", value: "2+" },
 ];
 
 export default function AboutSection() {
