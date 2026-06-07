@@ -285,7 +285,7 @@ export default function HeroSection() {
             View Projects
           </button>
           <a
-            href="/backend_resume_pro_2.pdf"
+            href="/vishwajeet_resume.pdf"
             download
             className="btn-outline"
             style={{ textDecoration: "none" }}

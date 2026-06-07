@@ -61,7 +61,7 @@ const experiences = [
 
   {
     period: "2024 – 2025",
-    role: "Backend Developer (Client Project)",
+    role: "Backend & Data Engineering Developer",
     company: "Databricks",
     type: "Enterprise Client Engagement",
     color: "#ff6b35",

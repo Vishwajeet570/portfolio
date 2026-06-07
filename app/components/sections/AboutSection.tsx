@@ -19,9 +19,9 @@ const timeline = [
   },
   {
     year: "2024 – 2025",
-    role: "Client Engagement – Databricks",
+    role: "Data Engineering Platform",
     company: "Databricks Project",
-    desc: "Worked on enterprise client initiatives involving backend systems, distributed architectures, data engineering concepts, scalable processing workflows, and large-scale application support.",
+    desc: "Contributed to enterprise-scale data engineering solutions within the Databricks ecosystem. Developed and maintained data pipelines, automated workflows, and scheduled jobs for large-scale data processing. Worked closely with Data Engineers and Data Analysts to optimize data movement, improve pipeline reliability, and support analytics-driven business requirements.",
     color: "#ff6b35",
   },
   {
