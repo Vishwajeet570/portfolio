@@ -166,15 +166,13 @@ export default function SkillsSection() {
       }}
     >
       <div
+        className="section-blob section-blob-xlarge"
         style={{
           position: "absolute",
           top: "20%",
           left: "50%",
           transform: "translateX(-50%)",
-          width: "600px",
-          height: "600px",
           background: "rgba(123,47,255,0.06)",
-          borderRadius: "50%",
           filter: "blur(150px)",
           pointerEvents: "none",
         }}
@@ -184,15 +182,7 @@ export default function SkillsSection() {
         style={{ position: "absolute", inset: 0, opacity: 0.4 }}
       />
 
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          maxWidth: "1280px",
-          margin: "0 auto",
-          padding: "0 2.5rem",
-        }}
-      >
+      <div className="section-inner">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -208,20 +198,13 @@ export default function SkillsSection() {
         </motion.div>
 
         {/* Two-column layout */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "4rem",
-            alignItems: "center",
-          }}
-        >
+        <div className="section-grid-2" style={{ gap: "4rem" }}>
           {/* 3D sphere */}
           <motion.div
             initial={{ opacity: 0, scale: 0.85 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
-            style={{ height: "420px", position: "relative" }}
+            className="scene-box"
           >
             <DynamicSkillScene />
             <div

@@ -201,11 +201,10 @@ export default function Navbar() {
             transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
             style={{
               position: "fixed",
-              inset: "0 0 0 25%",
+              inset: 0,
               zIndex: 8999,
               background: "rgba(7,11,20,0.97)",
               backdropFilter: "blur(24px)",
-              borderLeft: "1px solid rgba(0,212,255,0.12)",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",

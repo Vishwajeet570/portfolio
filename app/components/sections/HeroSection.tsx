@@ -118,13 +118,10 @@ export default function HeroSection() {
 
       {/* Content */}
       <div
+        className="section-inner"
         style={{
-          position: "relative",
-          zIndex: 10,
-          maxWidth: "1280px",
-          width: "100%",
-          margin: "0 auto",
-          padding: "8rem 2.5rem 5rem",
+          paddingTop: "8rem",
+          paddingBottom: "5rem",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
@@ -296,12 +293,12 @@ export default function HeroSection() {
 
         {/* Scroll indicator */}
         <motion.div
+          className="hero-scroll"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
           style={{
             position: "absolute",
-            bottom: "2.5rem",
             left: "50%",
             transform: "translateX(-50%)",
             display: "flex",
@@ -334,23 +331,9 @@ export default function HeroSection() {
       </div>
 
       {/* Corner info — desktop only */}
-      <div
-        style={{
-          position: "absolute",
-          top: "6rem",
-          right: "2.5rem",
-          zIndex: 10,
-          fontFamily: "'DM Mono',monospace",
-          fontSize: "0.6rem",
-          lineHeight: 2,
-          opacity: 0.35,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-end",
-        }}
-      >
+      <div className="hero-corner-info">
         <span>INIT_SEQUENCE</span>
-        <span style={{ color: "#00d4ff" }}>JAVA_DEV.exe</span>
+        <span>JAVA_DEV.exe</span>
         <span>STATUS: ONLINE</span>
       </div>
     </section>

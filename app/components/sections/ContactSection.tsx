@@ -440,41 +440,29 @@ export default function ContactSection() {
         style={{ position: "absolute", inset: 0, opacity: 0.4 }}
       />
       <div
+        className="section-blob section-blob-large"
         style={{
           position: "absolute",
           top: "20%",
           left: "5%",
-          width: "500px",
-          height: "500px",
           background: "rgba(123,47,255,0.05)",
-          borderRadius: "50%",
           filter: "blur(160px)",
           pointerEvents: "none",
         }}
       />
       <div
+        className="section-blob section-blob-large"
         style={{
           position: "absolute",
           bottom: "10%",
           right: "5%",
-          width: "500px",
-          height: "500px",
           background: "rgba(0,212,255,0.05)",
-          borderRadius: "50%",
           filter: "blur(160px)",
           pointerEvents: "none",
         }}
       />
 
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          maxWidth: "1280px",
-          margin: "0 auto",
-          padding: "0 2.5rem",
-        }}
-      >
+      <div className="section-inner">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -516,20 +504,15 @@ export default function ContactSection() {
 
         {/* Main grid — 3D left, cards right */}
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "4rem",
-            alignItems: "center",
-            marginBottom: "2.5rem",
-          }}
+          className="section-grid-2"
+          style={{ gap: "4rem", marginBottom: "2.5rem" }}
         >
           {/* LEFT — 3D model */}
           <motion.div
             initial={{ opacity: 0, scale: 0.88 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
-            style={{ position: "relative", height: "480px" }}
+            className="scene-box full-height"
           >
             {/* Glow behind canvas */}
             <div

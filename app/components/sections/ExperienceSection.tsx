@@ -100,14 +100,12 @@ export default function ExperienceSection() {
       }}
     >
       <div
+        className="section-blob section-blob-large"
         style={{
           position: "absolute",
           top: 0,
           right: 0,
-          width: "500px",
-          height: "500px",
           background: "rgba(0,212,255,0.04)",
-          borderRadius: "50%",
           filter: "blur(160px)",
           pointerEvents: "none",
         }}
@@ -117,15 +115,7 @@ export default function ExperienceSection() {
         style={{ position: "absolute", inset: 0, opacity: 0.35 }}
       />
 
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          maxWidth: "1280px",
-          margin: "0 auto",
-          padding: "0 2.5rem",
-        }}
-      >
+      <div className="section-inner">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -171,12 +161,8 @@ export default function ExperienceSection() {
               />
 
               <div
-                style={{
-                  padding: "2rem 2rem 2rem 2.75rem",
-                  display: "grid",
-                  gridTemplateColumns: "220px 1fr 1fr",
-                  gap: "2.5rem",
-                }}
+                className="experience-grid"
+                style={{ padding: "2rem 2rem 2rem 2.75rem" }}
               >
                 {/* Col 1 — Meta */}
                 <div>

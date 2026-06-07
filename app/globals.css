@@ -195,6 +195,236 @@ body {
   }
 }
 
+.section-inner {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-inner {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-inner {
+    padding: 0 4rem;
+  }
+}
+
+.section-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.section-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.section-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 220px) 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.hero-corner-info {
+  position: absolute;
+  top: 6rem;
+  right: 2.5rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  opacity: 0.35;
+  font-family: "DM Mono", monospace;
+  font-size: 0.6rem;
+  line-height: 2;
+  color: #8892b0;
+}
+
+.hero-corner-info span:nth-child(2) {
+  color: var(--accent-cyan);
+}
+
+.scene-box {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  height: 420px;
+}
+
+.scene-box.full-height {
+  height: 480px;
+}
+
+.mission-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  padding: 3.5rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  .section-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .section-grid-2,
+  .section-grid-3,
+  .section-grid-4,
+  .experience-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-inner {
+    padding: 0 1.5rem;
+  }
+
+  .hero-corner-info {
+    display: none;
+  }
+
+  .scene-box,
+  .scene-box.full-height {
+    height: 320px;
+  }
+
+  .mission-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.section-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.section-blob-medium {
+  width: 400px;
+  height: 400px;
+}
+
+.section-blob-large {
+  width: 500px;
+  height: 500px;
+}
+
+.section-blob-xlarge {
+  width: 600px;
+  height: 600px;
+}
+
+@media (max-width: 550px) {
+  .section-inner {
+    padding: 0 1rem;
+  }
+
+  .section-grid-2,
+  .section-grid-3,
+  .section-grid-4,
+  .experience-grid,
+  .stats-grid {
+    gap: 1rem;
+  }
+
+  .scene-box,
+  .scene-box.full-height {
+    height: 260px;
+  }
+
+  .section-blob-medium,
+  .section-blob-large,
+  .section-blob-xlarge {
+    width: 240px;
+    height: 240px;
+  }
+
+  .section-blob-xlarge {
+    width: 280px;
+    height: 280px;
+  }
+
+  .section-blob {
+    filter: blur(100px);
+  }
+
+  .btn-primary,
+  .btn-outline {
+    font-size: 0.72rem;
+    padding: 0.75rem 0.95rem;
+  }
+
+  .label-mono {
+    font-size: 0.64rem;
+    letter-spacing: 0.18em;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+  }
+}
+
+/* Hero scroll indicator - keep above stacked buttons on small screens */
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 20;
+}
+
+@media (max-width: 550px) {
+  .hero-scroll {
+    /* raise indicator above stacked CTAs */
+    bottom: 8rem;
+    pointer-events: none;
+  }
+}
+
 /* ════════════════════════════════════════
    GRADIENT TEXT
 ════════════════════════════════════════ */

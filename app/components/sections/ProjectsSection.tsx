@@ -443,28 +443,18 @@ export default function ProjectsSection() {
         style={{ position: "absolute", inset: 0, opacity: 0.5 }}
       />
       <div
+        className="section-blob section-blob-large"
         style={{
           position: "absolute",
           top: "10%",
           left: "10%",
-          width: "500px",
-          height: "500px",
           background: "rgba(0,212,255,0.04)",
-          borderRadius: "50%",
           filter: "blur(150px)",
           pointerEvents: "none",
         }}
       />
 
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          maxWidth: "1280px",
-          margin: "0 auto",
-          padding: "0 2.5rem",
-        }}
-      >
+      <div className="section-inner">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -489,13 +479,7 @@ export default function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            gap: "1.5rem",
-          }}
-        >
+        <div className="section-grid-3">
           {projects.map((p, i) => (
             <TiltCard key={p.id} project={p} index={i} inView={inView} />
           ))}

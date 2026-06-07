@@ -115,41 +115,29 @@ export default function AchievementsSection() {
         style={{ position: "absolute", inset: 0, opacity: 0.4 }}
       />
       <div
+        className="section-blob section-blob-medium"
         style={{
           position: "absolute",
           top: "25%",
           left: "20%",
-          width: "400px",
-          height: "400px",
           background: "rgba(0,212,255,0.05)",
-          borderRadius: "50%",
           filter: "blur(140px)",
           pointerEvents: "none",
         }}
       />
       <div
+        className="section-blob section-blob-medium"
         style={{
           position: "absolute",
           bottom: "25%",
           right: "20%",
-          width: "400px",
-          height: "400px",
           background: "rgba(123,47,255,0.05)",
-          borderRadius: "50%",
           filter: "blur(140px)",
           pointerEvents: "none",
         }}
       />
 
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          maxWidth: "1280px",
-          margin: "0 auto",
-          padding: "0 2.5rem",
-        }}
-      >
+      <div className="section-inner">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -177,14 +165,7 @@ export default function AchievementsSection() {
         </motion.div>
 
         {/* Stats grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4,1fr)",
-            gap: "1.25rem",
-            marginBottom: "4rem",
-          }}
-        >
+        <div className="section-grid-4" style={{ marginBottom: "4rem" }}>
           {achievements.map((item, i) => (
             <motion.div
               key={item.label}

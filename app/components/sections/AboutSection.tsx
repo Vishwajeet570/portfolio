@@ -66,27 +66,23 @@ export default function AboutSection() {
     >
       {/* Glow blobs */}
       <div
+        className="section-blob section-blob-medium"
         style={{
           position: "absolute",
           top: "10%",
           left: "5%",
-          width: "400px",
-          height: "400px",
           background: "rgba(123,47,255,0.07)",
-          borderRadius: "50%",
           filter: "blur(120px)",
           pointerEvents: "none",
         }}
       />
       <div
+        className="section-blob section-blob-medium"
         style={{
           position: "absolute",
           bottom: "10%",
           right: "5%",
-          width: "400px",
-          height: "400px",
           background: "rgba(0,212,255,0.07)",
-          borderRadius: "50%",
           filter: "blur(120px)",
           pointerEvents: "none",
         }}
@@ -99,15 +95,7 @@ export default function AboutSection() {
       />
 
       {/* ── Content ── */}
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          maxWidth: "1280px",
-          margin: "0 auto",
-          padding: "0 2.5rem",
-        }}
-      >
+      <div className="section-inner">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -125,14 +113,7 @@ export default function AboutSection() {
         </motion.div>
 
         {/* ── Two-column grid ── */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "4rem",
-            alignItems: "start",
-          }}
-        >
+        <div className="section-grid-2" style={{ gap: "4rem" }}>
           {/* ── LEFT COLUMN ── */}
           <div>
             {/* Holographic identity card */}
@@ -249,13 +230,7 @@ export default function AboutSection() {
                 </div>
 
                 {/* Stats grid */}
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: "0.75rem",
-                  }}
-                >
+                <div className="stats-grid">
                   {stats.map((s) => (
                     <div
                       key={s.label}
