@@ -664,7 +664,7 @@ export default function ContactSection() {
                   color: "#ff6b35",
                 }}
               >
-                Open to
+                Work Mode
               </div>
               <div
                 style={{

@@ -348,7 +348,7 @@ function TiltCard({
           </div>
 
           {/* Links */}
-          <div style={{ display: "flex", gap: "1.25rem" }}>
+          {/* <div style={{ display: "flex", gap: "1.25rem" }}>
             <a
               href="#"
               style={{
@@ -400,7 +400,7 @@ function TiltCard({
               </svg>
               Live Demo
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Corner accent */}

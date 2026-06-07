@@ -96,31 +96,6 @@ http://localhost:3000
 
 ---
 
-## 🔧 Environment Variables
-
-Create a `.env.local` file in the root directory:
-
-```env
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
-```
-
----
-
-## 📬 Contact Form
-
-The portfolio uses EmailJS for handling contact form submissions.
-
-Required:
-
-- EmailJS Account
-- Email Service
-- Email Template
-- Public Key
-
----
-
 ## 🚀 Deployment
 
 ### Netlify
@@ -164,9 +139,9 @@ I enjoy building scalable backend systems, solving DSA problems, and designing p
 
 ## 📊 Portfolio Highlights
 
-- 🚀 6+ Backend Projects
+- 🚀 10+ Backend Projects
 - ⚙️ 15+ Technologies
-- 🧠 500+ DSA Problems Solved
+- 🧠 600+ DSA Problems Solved
 - 💼 2+ Years Professional Experience
 
 ---
