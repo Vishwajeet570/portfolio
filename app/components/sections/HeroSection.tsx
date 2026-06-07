@@ -301,10 +301,6 @@ export default function HeroSection() {
             position: "absolute",
             left: "50%",
             transform: "translateX(-50%)",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "0.5rem",
           }}
         >
           <span

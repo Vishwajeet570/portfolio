@@ -278,29 +278,52 @@ export default function AboutSection() {
             >
               {[
                 <>
-                  I&apos;m a passionate{" "}
+                  I'm a passionate{" "}
                   <span style={{ color: "#00d4ff" }}>
-                    Java Backend Developer
+                    Java Backend Developer{" "}
                   </span>{" "}
-                  with a drive to build systems that scale. My journey from QA
-                  engineering to backend development has given me a unique
-                  perspective on writing code that&apos;s both functional and
-                  reliable.
+                  who enjoys building the systems that power modern applications
+                  behind the scenes. For me, backend development is more than
+                  writing APIs—it's about creating reliable foundations that
+                  businesses can depend on every day. I'm driven by the
+                  challenge of transforming complex requirements into scalable,
+                  efficient, and maintainable solutions that continue to perform
+                  as products and user bases grow.
                 </>,
                 <>
-                  Currently specialising in{" "}
+                  My expertise lies in{" "}
                   <span style={{ color: "#7b2fff" }}>
-                    Spring Boot microservices
+                    Spring Boot, Microservices, Distributed Systems, and
+                    Cloud-Native Development{" "}
                   </span>
-                  , container orchestration with Kubernetes, and building
-                  RESTful APIs that serve real-world applications at scale. I
-                  believe great backend systems are invisible — they just work.
+                  . Over the years, I have worked on enterprise applications,
+                  backend platforms, and data-driven solutions where
+                  performance, reliability, and scalability were critical. From
+                  designing RESTful APIs and implementing secure authentication
+                  mechanisms to optimizing database interactions and deploying
+                  containerized applications with Docker and Kubernetes, I enjoy
+                  every stage of the software development lifecycle.
                 </>,
                 <>
-                  When not coding, I&apos;m sharpening my{" "}
-                  <span style={{ color: "#ff6b35" }}>DSA skills</span>,
-                  exploring cloud architectures, and contributing to projects
-                  that solve real problems.
+                  What excites me most about backend engineering is solving
+                  problems that are often invisible to end users but essential
+                  to great products. Whether it's improving application
+                  performance, designing resilient service architectures,
+                  streamlining business workflows, or building systems that can
+                  handle increasing demand, I take pride in creating software
+                  that simply works—consistently, efficiently, and at scale.
+                </>,
+                <>
+                  Beyond my professional work, I'm constantly exploring{" "}
+                  <span style={{ color: "#ff6b35" }}>
+                    System Design, Data Structures & Algorithms, Cloud
+                    Technologies, and Software Architecture{" "}
+                  </span>
+                  . I believe continuous learning is one of the most important
+                  qualities of a great engineer. When I'm not coding, you'll
+                  often find me solving technical challenges, refining personal
+                  projects, studying scalable system patterns, or exploring new
+                  technologies that push me to grow as a developer.
                 </>,
               ].map((para, i) => (
                 <p
